@@ -1,6 +1,6 @@
 class Artist
   attr_accessor :name, :artist, :genre
-  ALL=[]
+  ALL = []
 
   def initialize(name)
    @name = name
@@ -21,11 +21,12 @@ class Artist
      song.artist == self
    end
 
+ end
+
   def genres
    Song.all.map do |song|
      song.genre
    end
-
  end
 end
 
